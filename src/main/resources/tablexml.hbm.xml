@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- add this -->
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<!-- here do all the mupping stuff - similar to annotations -->
+<hibernate-mapping>
+	<class name="com.dbtables.TableXML" table="db_hibernate">
+		<id name="id" type="int">
+			<column name="id" />
+			<generator class="increment" />
+		</id>
+
+		<!-- single property represents single column from database in my case 
+			I use the same names for properties in the class and columns in DB -->
+		<property name="name1" type="java.lang.String">
+			<column name="name1" />
+		</property>
+
+		<property name="name2" type="java.lang.String">
+			<column name="name2" />
+		</property>
+
+		<property name="val1" type="int">
+			<column name="val1" />
+		</property>
+
+		<property name="val2" type="int">
+			<column name="val2" />
+		</property>
+
+	</class>
+</hibernate-mapping>
