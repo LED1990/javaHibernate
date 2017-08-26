@@ -10,7 +10,7 @@
 <hibernate-configuration>
 	<session-factory>
 		<property name="hibernate.connection.url">jdbc:mysql://localhost/db_eclipse</property>
-		<property name="hibernate.connection.username">Eclispe</property>
+		<property name="hibernate.connection.username">Eclipse</property>
 		<property name="hibernate.connection.password">eclipse</property>
 		<property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
 

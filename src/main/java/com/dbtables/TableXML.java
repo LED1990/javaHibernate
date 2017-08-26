@@ -6,6 +6,17 @@ public class TableXML {
 	private int val1;
 	private int val2;
 	private int id;
+	
+	public TableXML(){}
+	
+
+	public TableXML(String name1, String name2, int val1, int val2) {
+		this.name1 = name1;
+		this.name2 = name2;
+		this.val1 = val1;
+		this.val2 = val2;
+	}
+
 
 	public String getName1() {
 		return name1;

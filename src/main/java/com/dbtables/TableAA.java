@@ -19,18 +19,25 @@ import javax.persistence.UniqueConstraint;
  */
 
 @Entity
-@Table(name = "db_hibernate",uniqueConstraints = {@UniqueConstraint(columnNames={"ID"})})
+@Table(name = "db_hibernate")
 public class TableAA {
 
 	private String name1;
 	private String name2;
 	private int val1;
 	private int val2;
+		
 	private int id;
-	
-	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	@Column(name = "id", nullable = false, unique = true, length = 11)
+	TableAA(){}
+	public TableAA(String name1, String name2, int val1, int val2) {
+		this.name1 = name1;
+		this.name2 = name2;
+		this.val1 = val1;
+		this.val2 = val2;
+	}
+	@Id	
+	@Column(name = "id",unique=true, nullable=false)
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	public int getId() {
 		return id;
 	}

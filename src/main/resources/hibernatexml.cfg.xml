@@ -10,7 +10,7 @@
 <hibernate-configuration>
 	<session-factory>
 		<property name="hibernate.connection.url">jdbc:mysql://localhost/db_eclipse</property>
-		<property name="hibernate.connection.username">Eclispe</property>
+		<property name="hibernate.connection.username">Eclipse</property>
 		<property name="hibernate.connection.password">eclipse</property>
 		<property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
 
@@ -31,7 +31,7 @@
 
 		<!-- here put mapping file if using XML or mapping class using annotations 
 		I can put more than one mappings files/classes here-->
-		<mapping resource="hibernatexml.hbm.xml" />
+		<mapping resource="tablexml.hbm.xml" />
 
 	</session-factory>
 </hibernate-configuration>

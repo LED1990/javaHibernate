@@ -6,7 +6,7 @@
 
 <!-- here do all the mupping stuff - similar to annotations -->
 <hibernate-mapping>
-	<class name="com.dbtables.TableXML" table="db_hibernate">
+	<class name="com.dbtables.TableXML" table="db_hib">
 		<id name="id" type="int">
 			<column name="id" />
 			<generator class="increment" />
